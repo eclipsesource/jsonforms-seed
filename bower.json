@@ -1,12 +1,13 @@
 {
-      "name": "jsonForms",
-        "description": "A starter project for QB Forms",
+        "name": "jsonforms-seed",
+        "description": "A starter project for JSONForms",
         "version": "0.0.1",
         "homepage": "https://github.com/qb-project/jsonforms",
         "license": "MIT",
         "private": true,
         "dependencies": {
             "angular": "1.2.x",
+            "bootstrap": "3.3.4",
             "jsonforms": "latest"
         }
 }
