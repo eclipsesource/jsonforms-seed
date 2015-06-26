@@ -16,7 +16,7 @@ app.controller('MyController', ['$scope', function($scope) {
                 "type": "string",
                 "enum": ["Male", "Female"]
             },
-            "birthDate" {
+            "birthDate": {
                 "type": "date"
             }
         }
@@ -25,8 +25,8 @@ app.controller('MyController', ['$scope', function($scope) {
     $scope.data = {
         "name": 'John Doe',
         "age": 36,
-        "height": 1.85
-        "gender": 'Male',
+        "height": 1.85,
+        "gender": 'Male'
     };
 
     $scope.formattedData = function() {
