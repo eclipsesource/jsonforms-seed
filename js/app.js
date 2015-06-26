@@ -23,10 +23,10 @@ app.controller('MyController', ['$scope', function($scope) {
     };
 
     $scope.data = {
-        name: 'John Doe',
-        age: 36,
-        height: 1.85
-        gender: 'Male',
+        "name": 'John Doe',
+        "age": 36,
+        "height": 1.85
+        "gender": 'Male',
     };
 
     $scope.formattedData = function() {
