@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('jsonforms-seed', []);
+var app = angular.module('jsonforms-seed', []);
