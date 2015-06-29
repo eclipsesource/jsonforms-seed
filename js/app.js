@@ -29,51 +29,5 @@ app.controller('MyController', ['$scope', function($scope) {
         "gender": 'Male'
     };
 
-    $scope.uiSchema = {
-     "elements": [
-       {
-         type: "HorizontalLayout",
-         elements: [
-            {
-              type: "VerticalLayout",
-              elements: [
-                {
-                  type: "Control",
-                  label: "Name",
-                  scope: {
-                    $ref: "#/properties/name"
-                  }
-                },
-                {
-                  type: "Control",
-                  label: "Age",
-                  scope: {
-                    $ref: "#/properties/age"
-                  }
-                }
-              ]
-            },
-            {
-              type: "VerticalLayout",
-              elements: [
-                {
-                  type: "Control",
-                  label: "Height",
-                  scope: {
-                    $ref: "#/properties/height"
-                  }
-                },
-                {
-                  type: "Control",
-                  label: "Gender",
-                  scope: {
-                    $ref: "#/properties/gender"
-                  }
-                }
-              ]
-            }
-         ]
-       }
-     ]
-   };
+    // TODO: define UI schema
 }]);
