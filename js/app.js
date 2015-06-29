@@ -16,8 +16,8 @@ app.controller('MyController', ['$scope', function($scope) {
                 "type": "string",
                 "enum": ["Male", "Female"]
             },
-            "birthDate": {
-                "type": "date"
+            "height": {
+                "type": "number"
             }
         }
     };
