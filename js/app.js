@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('jsonforms-seed', []);
+var app = angular.module('jsonforms-seed', ['jsonForms']);
 app.controller('MyController', ['$scope', function($scope) {
 
     $scope.schema = {
@@ -29,9 +29,51 @@ app.controller('MyController', ['$scope', function($scope) {
         "gender": 'Male'
     };
 
-    $scope.formattedData = function() {
-        return JSON.stringify(data);
-    };
-
-    // TODO: define UI schema
+    $scope.uiSchema = {
+     "elements": [
+       {
+         type: "HorizontalLayout",
+         elements: [
+            {
+              type: "VerticalLayout",
+              elements: [
+                {
+                  type: "Control",
+                  label: "Name",
+                  scope: {
+                    $ref: "#/properties/name"
+                  }
+                },
+                {
+                  type: "Control",
+                  label: "Age",
+                  scope: {
+                    $ref: "#/properties/age"
+                  }
+                }
+              ]
+            },
+            {
+              type: "VerticalLayout",
+              elements: [
+                {
+                  type: "Control",
+                  label: "Height",
+                  scope: {
+                    $ref: "#/properties/height"
+                  }
+                },
+                {
+                  type: "Control",
+                  label: "Gender",
+                  scope: {
+                    $ref: "#/properties/gender"
+                  }
+                }
+              ]
+            }
+         ]
+       }
+     ]
+   };
 }]);
