@@ -2,7 +2,7 @@
         "name": "jsonforms-seed",
         "description": "A starter project for JSONForms",
         "version": "0.0.1",
-        "homepage": "https://github.com/qb-project/jsonforms",
+        "homepage": "https://github.com/eclipsesource/jsonforms",
         "license": "MIT",
         "private": true,
         "dependencies": {
@@ -10,7 +10,8 @@
             "angular-ui-bootstrap-bower": "0.11.2",
             "angular-ui-grid": "3.0.0-rc.21",
             "bootstrap": "3.3.4",
-            "jsonforms": "latest",
-            "ui-utils": "0.1.1"
+            "json-refs": "latest",
+            "ui-utils": "0.1.1",
+            "jsonforms": "latest"
         }
 }

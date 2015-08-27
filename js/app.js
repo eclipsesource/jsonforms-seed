@@ -1,26 +1,11 @@
 'use strict';
 
 var app = angular.module('jsonforms-seed', ['jsonForms']);
-app.controller('MyController', ['$scope', function($scope) {
+app.controller('MyController', ['$scope', 'SchemaService', 'UISchemaService', function($scope, SchemaService, UISchemaService) {
 
-    $scope.schema = {
-        "type": "object",
-        "properties": {
-            "name": {
-                "type": "string"
-            },
-            "age": {
-                "type": "integer"
-            },
-            "gender": {
-                "type": "string",
-                "enum": ["Male", "Female"]
-            },
-            "height": {
-                "type": "number"
-            }
-        }
-    };
+    $scope.schema = SchemaService.schema;
+
+    $scope.uiSchema = UISchemaService.uiSchema; 
 
     $scope.data = {
         "name": 'John Doe',
@@ -28,6 +13,4 @@ app.controller('MyController', ['$scope', function($scope) {
         "height": 1.85,
         "gender": 'Male'
     };
-
-    // TODO: define UI schema
 }]);
