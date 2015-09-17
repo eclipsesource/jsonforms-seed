@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('jsonforms-seed', ['jsonForms']);
+var app = angular.module('jsonforms-seed', ['jsonforms']);
 app.controller('MyController', ['$scope', 'SchemaService', 'UISchemaService', function($scope, SchemaService, UISchemaService) {
 
     $scope.schema = SchemaService.schema;
