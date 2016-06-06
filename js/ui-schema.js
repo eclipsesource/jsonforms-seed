@@ -1,9 +1,8 @@
 'use strict';
 
 var app = angular.module('jsonforms-seed');
-app.service('UISchemaService', function() {
-
-    this.uiSchema = {
+app.value('UISchema',
+    {
         "type": "HorizontalLayout",
         "elements": [
             {
@@ -19,6 +18,5 @@ app.service('UISchemaService', function() {
                 "scope": { "$ref": "#/properties/gender" }
             },
         ]
-    };
-
-});
+    }
+);

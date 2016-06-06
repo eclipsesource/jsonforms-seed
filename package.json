@@ -1,0 +1,20 @@
+{
+  "name": "jsonforms-seed",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A starter project for JSONForms",
+  "repository": "https://github.com/eclipsesource/jsonforms",
+  "license": "MIT",
+  "dependencies":{
+    "typings": "0.6.5",
+    "jsonforms": "0.0.19",
+    "bootstrap": "3.3.6"
+  },
+  "devDependencies": {
+    "lite-server": "2.2.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "lite-server"
+  }
+}
