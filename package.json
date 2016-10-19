@@ -6,12 +6,11 @@
   "repository": "https://github.com/eclipsesource/jsonforms",
   "license": "MIT",
   "dependencies":{
-    "typings": "0.6.5",
-    "jsonforms": "0.0.19",
-    "bootstrap": "3.3.6"
+    "jsonforms": "1.0.12",
+    "bootstrap": "3.3.7"
   },
   "devDependencies": {
-    "lite-server": "2.2.0"
+    "lite-server": "2.2.2"
   },
   "scripts": {
     "prestart": "npm install",
